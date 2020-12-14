@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXNodesList?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pkg1st.pnp.itms.hackathon.pkg2019.DTNPISController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Drug Test Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField labelFloat="true" layoutX="20.0" layoutY="40.0" prefHeight="30.0" prefWidth="190.0" promptText="First Name" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField labelFloat="true" layoutX="20.0" layoutY="90.0" prefHeight="30.0" prefWidth="190.0" promptText="Middle Name" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#1c55ff" labelFloat="true" layoutX="20.0" layoutY="140.0" prefHeight="30.0" prefWidth="190.0" promptText="Last Name" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXRadioButton layoutX="20.0" layoutY="200.0" text="Male" />
+                        <JFXRadioButton layoutX="100.0" layoutY="200.0" text="Female" />
+                        <JFXDatePicker layoutX="20.0" layoutY="240.0" prefHeight="25.0" prefWidth="200.0" promptText="Birthdate" style="-fx-font-size: 14;" />
+                        <JFXTextField focusColor="#1c55ff" labelFloat="true" layoutX="20.0" layoutY="290.0" prefHeight="30.0" prefWidth="190.0" promptText="Purpose" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#1c55ff" labelFloat="true" layoutX="20.0" layoutY="340.0" prefHeight="30.0" prefWidth="190.0" promptText="Analyst" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#1c55ff" labelFloat="true" layoutX="20.0" layoutY="390.0" prefHeight="30.0" prefWidth="190.0" promptText="Head of Laboratory" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXTextField labelFloat="true" layoutX="250.0" layoutY="40.0" prefHeight="30.0" prefWidth="190.0" promptText="Test Method" style="-fx-text-fill: blue;">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="250.0" layoutY="90.0" style="-fx-background-color: red; -fx-background-radius: 100;" text="Result" textAlignment="CENTER">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PLUS" textAlignment="CENTER" />
+                           </graphic>
+                        </JFXButton>
+                        <Label layoutX="289.0" layoutY="95.0" prefHeight="20.0" prefWidth="48.0" text="Result">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <JFXNodesList layoutX="633.0" layoutY="332.0" prefWidth="0.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text=" Neuro-Psychiatric Information">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>

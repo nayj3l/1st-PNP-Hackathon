@@ -1,0 +1,15 @@
+/*.text-field{
+    -fx-prompt-text-fill: #4059a9; Yellow - floating label8
+    -fx-text-fill: #fffd8c; Yellow - input color
+    -fx-highlight-fill: #4eb769; Green
+}*/
+
+#fld_name .input-line, 
+#fld_sex .input-line, 
+#fld_mobile_phone .input-line,
+#fld_birthday .input-line,
+#fld_address .input-line,
+#fld_unitname .input-line,
+#data_stat_search .input-line{
+    -fx-pref-height: 0px;
+}
